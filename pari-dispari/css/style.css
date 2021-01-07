@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 25px;
+}
+
+.content, .result{
+  width: 350px;
+  height: auto;
+  text-align: center;
+  margin: 50px auto;
+  border: 2px solid orange;
+  background-image: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);
+}
+
+.result{
+  height: 100px;
+  line-height: 100px;
+}
+
+#result{
+  display: block;
+  margin-top: 20px;
+  animation-name: result;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes result {
+  0% {
+    color: #000;
+    transform: scale(1);
+  }
+
+  50% {
+    color: #fff;
+    transform: scale(1.2);
+  }
+
+  100% {
+    color: #000;
+    transform: scale(1);
+  }
+}
